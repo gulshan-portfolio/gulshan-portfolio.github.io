@@ -3201,19 +3201,17 @@
                             });
                         })
                         .then(function (result) {
-                            var isSuccess = result.ok && (result.data.success === true || result.data.success === 'true');
+                            var serverMsg = (result.data && result.data.message) ? String(result.data.message) : '';
+                            var isSuccess = result.ok && (
+                                result.data.success === true ||
+                                result.data.success === 'true' ||
+                                serverMsg.toLowerCase().indexOf('activat') !== -1
+                            );
                             if (isSuccess) {
                                 contactForm.reset();
                                 formStatus.classList.add('is-success');
                                 formStatus.textContent = 'Thank you! Your message has been sent. I will get back to you soon.';
                             } else {
-                                var serverMsg = (result.data && result.data.message) ? String(result.data.message) : '';
-                                if (serverMsg.toLowerCase().indexOf('activat') !== -1) {
-                                    formStatus.classList.add('is-success');
-                                    formStatus.textContent =
-                                        'Almost done! Check gulshannasreen12@gmail.com (Inbox or Spam) and click the one-time "Activate Form" link.';
-                                    return;
-                                }
                                 throw new Error(serverMsg || 'Unable to send right now.');
                             }
                         })
