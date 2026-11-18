@@ -2862,18 +2862,20 @@
                         <!-- ADD: social links (e.g., LinkedIn, Upwork, GitHub) here when ready -->
                     </div>
 
-                    <!-- Formspree Contact Form -->
+                    <!-- Direct Email Contact Form (FormSubmit.co) -->
                     <div class="contact-form-card reveal">
                         <h3>Send a Message</h3>
                         <p class="contact-intro">
                             Share brief details about the role, project scope, or timeline.
                         </p>
 
-                        <!-- UPDATE: Replace YOUR_FORMSPREE_ID with your actual Formspree endpoint ID -->
-                        <form id="contact-form" class="form-grid" action="https://formspree.io/f/YOUR_FORMSPREE_ID"
-                            method="POST">
-                            <!-- Spam Honeypot -->
-                            <input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off"
+                        <form id="contact-form" class="form-grid"
+                            action="https://formsubmit.co/gulshannasreen12@gmail.com" method="POST">
+                            <!-- FormSubmit Configuration & Spam Honeypot -->
+                            <input type="hidden" name="_subject" value="New Portfolio Inquiry — Gulshan Nasreen">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off"
                                 aria-hidden="true">
 
                             <div class="form-group">
@@ -3155,7 +3157,7 @@
             }
 
             /* ----------------------------------------------------------------------
-               7. Contact Form Submission (Formspree Progressive Enhancement)
+               7. Contact Form Submission (Direct Email via FormSubmit.co AJAX)
                ---------------------------------------------------------------------- */
             var contactForm = document.getElementById('contact-form');
             var formStatus = document.getElementById('form-status');
@@ -3166,44 +3168,59 @@
                     event.preventDefault();
 
                     var actionUrl = contactForm.getAttribute('action') || '';
-                    var placeholderToken = 'YOUR_' + 'FORMSPREE_ID';
+                    var ajaxUrl = actionUrl.replace('formsubmit.co/', 'formsubmit.co/ajax/');
                     formStatus.className = 'form-status';
 
-                    if (actionUrl.indexOf(placeholderToken) !== -1) {
+                    if (window.location.protocol === 'file:') {
                         formStatus.classList.add('is-error');
                         formStatus.textContent =
-                            'This form is not connected yet. Please reach out directly by email at gulshannasreen12@gmail.com or on WhatsApp.';
+                            'Please test this form on the live website (https://gulshan-portfolio.github.io/) so messages can be delivered by email.';
                         return;
                     }
+
+                    var payload = {};
+                    new FormData(contactForm).forEach(function (value, key) {
+                        payload[key] = value;
+                    });
 
                     submitBtn.disabled = true;
                     submitBtn.setAttribute('aria-busy', 'true');
                     formStatus.textContent = 'Sending your message...';
 
-                    fetch(actionUrl, {
+                    fetch(ajaxUrl, {
                         method: 'POST',
-                        body: new FormData(contactForm),
-                        headers: { Accept: 'application/json' }
+                        headers: {
+                            'Content-Type': 'application/json',
+                            Accept: 'application/json'
+                        },
+                        body: JSON.stringify(payload)
                     })
                         .then(function (response) {
-                            if (response.ok) {
+                            return response.json().then(function (data) {
+                                return { ok: response.ok, data: data };
+                            });
+                        })
+                        .then(function (result) {
+                            var isSuccess = result.ok && (result.data.success === true || result.data.success === 'true');
+                            if (isSuccess) {
                                 contactForm.reset();
                                 formStatus.classList.add('is-success');
                                 formStatus.textContent = 'Thank you! Your message has been sent. I will get back to you soon.';
                             } else {
-                                return response.json().then(function (data) {
-                                    throw new Error(
-                                        data && data.errors
-                                            ? data.errors.map(function (err) { return err.message; }).join(', ')
-                                            : 'Unable to send right now.'
-                                    );
-                                });
+                                var serverMsg = (result.data && result.data.message) ? String(result.data.message) : '';
+                                if (serverMsg.toLowerCase().indexOf('activat') !== -1) {
+                                    formStatus.classList.add('is-success');
+                                    formStatus.textContent =
+                                        'Almost done! Check gulshannasreen12@gmail.com (Inbox or Spam) and click the one-time "Activate Form" link.';
+                                    return;
+                                }
+                                throw new Error(serverMsg || 'Unable to send right now.');
                             }
                         })
                         .catch(function () {
                             formStatus.classList.add('is-error');
                             formStatus.textContent =
-                                'Something went wrong while sending your message. Please email gulshannasreen12@gmail.com or message me on WhatsApp.';
+                                'Unable to send right now. Please email gulshannasreen12@gmail.com or message me on WhatsApp.';
                         })
                         .finally(function () {
                             submitBtn.disabled = false;
