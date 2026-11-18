@@ -1,0 +1,3219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Gulshan Nasreen | SEO &amp; Administration in Lahore, Pakistan</title>
+    <meta name="description"
+        content="Gulshan Nasreen, SEO &amp; Administration Professional in Lahore, Pakistan. 5 years admin experience, MSc Computer Science, WordPress &amp; on-page SEO.">
+    <meta name="author" content="Gulshan Nasreen">
+    <meta name="robots" content="index, follow">
+    <!-- UPDATE: Replace with your live portfolio URL once deployed -->
+    <link rel="canonical" href="https://example.com/">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0F172A" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#F8FAFC" media="(prefers-color-scheme: light)">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Gulshan Nasreen Portfolio">
+    <meta property="og:title" content="Gulshan Nasreen | SEO &amp; Administration Professional in Lahore, Pakistan">
+    <meta property="og:description"
+        content="Administration &amp; SEO Professional in Lahore, Pakistan with 5 years of administrative experience, MSc Computer Science, and hands-on WordPress &amp; SEO skills.">
+    <!-- UPDATE: Replace with your live portfolio URL -->
+    <meta property="og:url" content="https://example.com/">
+    <!-- ADD: og:image absolute URL (1200x630 PNG/JPG) once hosted, e.g.:
+  <meta property="og:image" content="https://example.com/og-preview.png"> -->
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Gulshan Nasreen | SEO &amp; Administration Professional">
+    <meta name="twitter:description"
+        content="Administration &amp; SEO Professional in Lahore, Pakistan — 5 years administrative experience, MSc Computer Science, WordPress &amp; SEO optimization.">
+    <!-- ADD: twitter:image absolute URL once hosted -->
+
+    <!-- Inline SVG Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F172A'/%3E%3Crect x='3' y='3' width='58' height='58' rx='11' fill='none' stroke='%2314B8A6' stroke-width='2.5'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='26' fill='%23F8FAFC'%3EGN%3C/text%3E%3C/svg%3E">
+
+    <!-- Performance: Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts: Poppins (Headings) & Inter (Body) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Structured Data: Schema.org Person Markup -->
+    <!-- UPDATE: Add "url" and "sameAs" (LinkedIn, etc.) properties inside the JSON-LD below once available -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gulshan Nasreen",
+    "jobTitle": "Administration & SEO Professional",
+    "description": "Results-oriented professional in Lahore, Pakistan combining 5 years of administrative experience with hands-on SEO, WordPress, keyword research, content optimization, and link building.",
+    "email": "mailto:gulshannasreen12@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lahore",
+      "addressCountry": "PK"
+    },
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "degree",
+      "name": "Master of Science (MSc) in Computer Science"
+    },
+    "knowsAbout": [
+      "On-Page SEO",
+      "Off-Page SEO",
+      "Link Building",
+      "Keyword Research",
+      "Content Optimization",
+      "Website SEO Audits",
+      "Competitor and SERP Analysis",
+      "Internal Linking",
+      "WordPress",
+      "Google Search Console",
+      "Google Analytics",
+      "Administration and Office Operations",
+      "Reporting and Documentation",
+      "Team Coordination"
+    ]
+  }
+  </script>
+
+    <!-- Prevent Theme Flash Before First Paint -->
+    <script>
+        (function () {
+            document.documentElement.classList.add('js-enabled');
+            var savedTheme = null;
+            try {
+                savedTheme = localStorage.getItem('gn-theme');
+            } catch (e) { }
+            var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            var theme = savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+
+    <style>
+        /* ==========================================================================
+       1. Design Tokens & Theme Variables
+       ========================================================================== */
+        :root {
+            /* Brand Core Palette */
+            --navy: #0F172A;
+            --navy-soft: #1E293B;
+            --teal: #14B8A6;
+            --teal-hover: #0D9488;
+            --teal-text: #0F766E;
+            /* WCAG AA >= 5.4:1 on #F8FAFC and #FFFFFF */
+            --off-white: #F8FAFC;
+
+            /* Light Mode Semantic Tokens */
+            --bg-page: #F8FAFC;
+            --bg-surface: #FFFFFF;
+            --bg-subtle: #F1F5F9;
+            --bg-chip: #F0FDFA;
+            --border-chip: #99F6E4;
+            --text-primary: #0F172A;
+            --text-secondary: #334155;
+            --text-muted: #475569;
+            --border-color: #E2E8F0;
+            --border-strong: #CBD5E1;
+            --nav-bg: rgba(248, 250, 252, 0.9);
+            --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+            --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.07), 0 4px 10px -4px rgba(15, 23, 42, 0.04);
+            --shadow-lg: 0 18px 36px -12px rgba(15, 23, 42, 0.12);
+            --hero-glow: radial-gradient(circle at 80% 20%, rgba(20, 184, 166, 0.14), transparent 55%),
+                radial-gradient(circle at 15% 85%, rgba(15, 23, 42, 0.06), transparent 50%);
+
+            /* Typography & Layout */
+            --font-heading: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --container-max: 1120px;
+            --nav-height: 72px;
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 20px;
+            --transition: 220ms cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        [data-theme="dark"] {
+            --bg-page: #0F172A;
+            --bg-surface: #1E293B;
+            --bg-subtle: #162032;
+            --bg-chip: rgba(20, 184, 166, 0.12);
+            --border-chip: rgba(45, 212, 191, 0.3);
+            --teal-text: #2DD4BF;
+            /* WCAG AAA on #0F172A and #1E293B */
+            --text-primary: #F8FAFC;
+            --text-secondary: #CBD5E1;
+            --text-muted: #94A3B8;
+            --border-color: #293548;
+            --border-strong: #334155;
+            --nav-bg: rgba(15, 23, 42, 0.88);
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
+            --shadow-md: 0 12px 28px -6px rgba(0, 0, 0, 0.35);
+            --shadow-lg: 0 20px 40px -12px rgba(0, 0, 0, 0.48);
+            --hero-glow: radial-gradient(circle at 82% 20%, rgba(20, 184, 166, 0.16), transparent 52%),
+                radial-gradient(circle at 12% 85%, rgba(45, 212, 191, 0.08), transparent 48%);
+        }
+
+        /* ==========================================================================
+       2. Reset & Base Styles
+       ========================================================================== */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: calc(var(--nav-height) + 16px);
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            line-height: 1.68;
+            color: var(--text-secondary);
+            background-color: var(--bg-page);
+            overflow-x: clip;
+            transition: background-color var(--transition), color var(--transition);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: var(--font-heading);
+            color: var(--text-primary);
+            line-height: 1.25;
+            margin: 0;
+            letter-spacing: -0.015em;
+        }
+
+        p {
+            margin: 0 0 1rem;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: var(--teal-text);
+            text-decoration: none;
+            transition: color var(--transition);
+        }
+
+        a:hover {
+            color: var(--teal-hover);
+        }
+
+        ul,
+        ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
+            color: inherit;
+        }
+
+        :focus-visible {
+            outline: 2.5px solid var(--teal);
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+        /* Inline SVG Icon Utility */
+        .icon {
+            width: 1.125em;
+            height: 1.125em;
+            display: inline-block;
+            flex-shrink: 0;
+            vertical-align: middle;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+        }
+
+        .icon--md {
+            width: 20px;
+            height: 20px;
+        }
+
+        .icon--lg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .icon--xl {
+            width: 26px;
+            height: 26px;
+        }
+
+        /* Skip Link for Keyboard Accessibility */
+        .skip-link {
+            position: fixed;
+            top: -100px;
+            left: 1rem;
+            z-index: 1000;
+            padding: 0.75rem 1.25rem;
+            background-color: var(--navy);
+            color: #F8FAFC;
+            font-weight: 600;
+            border-radius: var(--radius-sm);
+            border: 2px solid var(--teal);
+            transition: top 160ms ease;
+        }
+
+        .skip-link:focus {
+            top: 1rem;
+            color: #F8FAFC;
+        }
+
+        /* ==========================================================================
+       3. Layout Utilities & Section Framing
+       ========================================================================== */
+        .container {
+            width: 100%;
+            max-width: var(--container-max);
+            margin-inline: auto;
+            padding-inline: 1.25rem;
+        }
+
+        .section {
+            padding-block: 4.5rem;
+        }
+
+        .section--alt {
+            background-color: var(--bg-subtle);
+            border-block: 1px solid var(--border-color);
+        }
+
+        .section-header {
+            max-width: 680px;
+            margin-bottom: 2.75rem;
+        }
+
+        .section-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--teal-text);
+            margin-bottom: 0.65rem;
+        }
+
+        .section-eyebrow::before {
+            content: "";
+            width: 22px;
+            height: 2px;
+            background-color: var(--teal);
+            border-radius: 2px;
+        }
+
+        .section-title {
+            font-size: clamp(1.65rem, 3vw, 2.15rem);
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        .section-subtitle {
+            color: var(--text-muted);
+            font-size: 1.02rem;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.55rem;
+            padding: 0.82rem 1.45rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border-radius: var(--radius-sm);
+            border: 1.5px solid transparent;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: transform var(--transition), background-color var(--transition),
+                border-color var(--transition), color var(--transition), box-shadow var(--transition);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn-primary {
+            background-color: var(--navy);
+            color: #F8FAFC;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--navy-soft);
+            color: #F8FAFC;
+            box-shadow: var(--shadow-md);
+        }
+
+        [data-theme="dark"] .btn-primary {
+            background-color: var(--teal);
+            color: #0F172A;
+        }
+
+        [data-theme="dark"] .btn-primary:hover {
+            background-color: #2DD4BF;
+            color: #0F172A;
+        }
+
+        .btn-secondary {
+            background-color: var(--bg-surface);
+            color: var(--text-primary);
+            border-color: var(--border-strong);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--teal);
+            color: var(--teal-text);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-whatsapp {
+            background-color: #0F766E;
+            color: #FFFFFF;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #115E59;
+            color: #FFFFFF;
+            box-shadow: var(--shadow-md);
+        }
+
+        [data-theme="dark"] .btn-whatsapp {
+            background-color: #14B8A6;
+            color: #0F172A;
+        }
+
+        [data-theme="dark"] .btn-whatsapp:hover {
+            background-color: #2DD4BF;
+            color: #0F172A;
+        }
+
+        /* ==========================================================================
+       4. Sticky Header & Navigation
+       ========================================================================== */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            height: var(--nav-height);
+            background-color: var(--nav-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+            transition: background-color var(--transition), border-color var(--transition);
+        }
+
+        .nav-bar {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            color: var(--text-primary);
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1.05rem;
+            letter-spacing: -0.01em;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .brand:hover {
+            color: var(--text-primary);
+        }
+
+        .brand-mark {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 9px;
+            background-color: var(--navy);
+            color: #F8FAFC;
+            font-size: 0.875rem;
+            border: 1.5px solid var(--teal);
+            flex-shrink: 0;
+        }
+
+        .nav-links {
+            display: none;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .nav-link {
+            position: relative;
+            padding: 0.45rem 0.72rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            border-radius: 6px;
+            white-space: nowrap;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--teal-text);
+        }
+
+        .nav-link.active {
+            font-weight: 600;
+            background-color: var(--bg-chip);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-shrink: 0;
+        }
+
+        .icon-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border-color);
+            background-color: var(--bg-surface);
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: border-color var(--transition), color var(--transition), background-color var(--transition);
+        }
+
+        .icon-btn:hover {
+            border-color: var(--teal);
+            color: var(--teal-text);
+        }
+
+        /* Toggle Icons via CSS State */
+        .icon-sun {
+            display: none;
+        }
+
+        .icon-moon {
+            display: inline-block;
+        }
+
+        [data-theme="dark"] .icon-sun {
+            display: inline-block;
+        }
+
+        [data-theme="dark"] .icon-moon {
+            display: none;
+        }
+
+        .icon-close {
+            display: none;
+        }
+
+        #menu-toggle[aria-expanded="true"] .icon-menu {
+            display: none;
+        }
+
+        #menu-toggle[aria-expanded="true"] .icon-close {
+            display: inline-block;
+        }
+
+        /* Mobile Drawer (Scrollable in Landscape) */
+        .mobile-menu {
+            position: fixed;
+            top: var(--nav-height);
+            left: 0;
+            right: 0;
+            max-height: calc(100vh - var(--nav-height));
+            max-height: calc(100dvh - var(--nav-height));
+            overflow-y: auto;
+            background-color: var(--bg-surface);
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: var(--shadow-lg);
+            padding: 1rem 1.25rem 1.5rem;
+            transform: translateY(-10px);
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: opacity 200ms ease, transform 200ms ease, visibility 200ms ease;
+            z-index: 95;
+        }
+
+        .mobile-menu.is-open {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .mobile-menu-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .mobile-menu-list .nav-link {
+            display: block;
+            padding: 0.72rem 0.85rem;
+            font-size: 0.98rem;
+        }
+
+        /* ==========================================================================
+       5. Hero Section
+       ========================================================================== */
+        .hero {
+            position: relative;
+            padding-block: 3.75rem 3.5rem;
+            background-image: var(--hero-glow);
+            overflow: hidden;
+        }
+
+        .hero-pattern {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            opacity: 0.35;
+            z-index: 0;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.35rem 0.85rem;
+            font-size: 0.83rem;
+            font-weight: 600;
+            color: var(--teal-text);
+            background-color: var(--bg-chip);
+            border: 1px solid var(--border-chip);
+            border-radius: 999px;
+            margin-bottom: 1.15rem;
+        }
+
+        .hero-badge-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--teal);
+            flex-shrink: 0;
+        }
+
+        .hero-title {
+            font-size: clamp(2.15rem, 5vw, 3.25rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.025em;
+        }
+
+        .hero-headline {
+            display: block;
+            font-family: var(--font-heading);
+            font-size: clamp(1.15rem, 2.4vw, 1.45rem);
+            font-weight: 600;
+            color: var(--teal-text);
+            letter-spacing: -0.01em;
+            margin-top: 0.45rem;
+        }
+
+        .hero-value {
+            font-size: 1.06rem;
+            max-width: 600px;
+            color: var(--text-secondary);
+            margin-bottom: 1.75rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.85rem;
+        }
+
+        /* Avatar Column */
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+        }
+
+        .avatar-card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding: 2rem 2.25rem;
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .avatar-ring {
+            position: relative;
+            width: 148px;
+            height: 148px;
+            border-radius: 50%;
+            padding: 5px;
+            background: linear-gradient(135deg, var(--teal), var(--navy));
+            box-shadow: 0 12px 24px -8px rgba(15, 23, 42, 0.25);
+        }
+
+        .avatar-initials {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #0F172A 0%, #1E293B 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: 2.85rem;
+            font-weight: 700;
+            color: #F8FAFC;
+            letter-spacing: 0.04em;
+            border: 3px solid var(--bg-surface);
+        }
+
+        .avatar-caption {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+        }
+
+        .avatar-caption .icon {
+            color: var(--teal-text);
+        }
+
+        /* Quick-Facts Strip */
+        .quick-facts {
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.85rem;
+            padding: 1.25rem;
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .fact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 0.55rem 0.65rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .fact-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 9px;
+            background-color: var(--bg-chip);
+            color: var(--teal-text);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .fact-label {
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.35;
+        }
+
+        /* ==========================================================================
+       6. About Section
+       ========================================================================== */
+        .about-card {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--teal);
+            border-radius: var(--radius-md);
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            max-width: 860px;
+        }
+
+        .about-card p {
+            font-size: 1.04rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.15rem;
+        }
+
+        .about-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ==========================================================================
+       7. Services Grid
+       ========================================================================== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+
+        .card {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1.65rem;
+            box-shadow: var(--shadow-sm);
+            transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+            min-width: 0;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--teal);
+            box-shadow: var(--shadow-md);
+        }
+
+        .card-icon {
+            width: 46px;
+            height: 46px;
+            border-radius: 11px;
+            background-color: var(--bg-chip);
+            border: 1px solid var(--border-chip);
+            color: var(--teal-text);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.1rem;
+        }
+
+        .card-title {
+            font-size: 1.08rem;
+            font-weight: 600;
+            margin-bottom: 0.55rem;
+        }
+
+        .card-text {
+            font-size: 0.94rem;
+            color: var(--text-muted);
+        }
+
+        /* ==========================================================================
+       8. How I Work (4-Step Process)
+       ========================================================================== */
+        .process-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+
+        .process-step {
+            position: relative;
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1.65rem;
+            box-shadow: var(--shadow-sm);
+            transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+        }
+
+        .process-step:hover {
+            transform: translateY(-3px);
+            border-color: var(--teal);
+            box-shadow: var(--shadow-md);
+        }
+
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background-color: var(--navy);
+            color: #F8FAFC;
+            font-family: var(--font-heading);
+            font-size: 0.9rem;
+            font-weight: 700;
+            border: 2px solid var(--teal);
+            margin-bottom: 1rem;
+        }
+
+        [data-theme="dark"] .step-number {
+            background-color: var(--teal);
+            color: #0F172A;
+        }
+
+        .process-step h3 {
+            font-size: 1.06rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .process-step p {
+            font-size: 0.93rem;
+            color: var(--text-muted);
+        }
+
+        /* ==========================================================================
+       9. Skills (Grouped Chips — No Percentage Bars)
+       ========================================================================== */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+
+        .skill-group {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1.65rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .skill-group-header {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            margin-bottom: 1.15rem;
+            padding-bottom: 0.85rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .skill-group-header .icon {
+            color: var(--teal-text);
+        }
+
+        .skill-group-header h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+
+        .chip-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.55rem;
+        }
+
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.42rem 0.82rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            background-color: var(--bg-subtle);
+            border: 1px solid var(--border-color);
+            border-radius: 999px;
+            transition: border-color var(--transition), background-color var(--transition), color var(--transition);
+        }
+
+        .chip:hover {
+            border-color: var(--teal);
+            background-color: var(--bg-chip);
+            color: var(--teal-text);
+        }
+
+        /* ==========================================================================
+       10. Experience Timeline & SEO Project Skills Showcase
+       ========================================================================== */
+        .exp-track {
+            display: flex;
+            flex-direction: column;
+            gap: 1.35rem;
+        }
+
+        .exp-track + .exp-track {
+            margin-top: 3rem;
+        }
+
+        .exp-track-header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+            padding-bottom: 0.85rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .exp-track-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-family: var(--font-heading);
+            font-size: 0.92rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--text-primary);
+        }
+
+        .exp-track-label .icon {
+            color: var(--teal-text);
+        }
+
+        .exp-track-meta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 1.85rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 8px;
+            top: 24px;
+            bottom: 24px;
+            width: 2px;
+            background: linear-gradient(180deg, var(--teal) 0%, var(--border-strong) 100%);
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+        }
+
+        .timeline-item:hover {
+            transform: translateY(-3px);
+            border-color: var(--teal);
+            box-shadow: var(--shadow-md);
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -1.85rem;
+            top: 1.85rem;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: var(--teal);
+            border: 4px solid var(--bg-page);
+            box-shadow: 0 0 0 2px var(--teal), 0 0 0 6px rgba(20, 184, 166, 0.14);
+            z-index: 1;
+        }
+
+        .section--alt .timeline-item::before {
+            border-color: var(--bg-subtle);
+        }
+
+        .role-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.25rem;
+            background: linear-gradient(90deg, rgba(20, 184, 166, 0.07) 0%, transparent 70%);
+            border-bottom: 1px solid var(--border-color);
+            border-radius: calc(var(--radius-md) - 1px) calc(var(--radius-md) - 1px) 0 0;
+        }
+
+        [data-theme="dark"] .role-header {
+            background: linear-gradient(90deg, rgba(20, 184, 166, 0.11) 0%, transparent 72%);
+        }
+
+        .role-heading-wrap {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.95rem;
+            min-width: 0;
+        }
+
+        .role-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 11px;
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-chip);
+            color: var(--teal-text);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .role-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .role-org {
+            font-size: 0.93rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .role-org strong {
+            color: var(--teal-text);
+            font-weight: 600;
+        }
+
+        .duration-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.34rem 0.85rem;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--teal-text);
+            background-color: var(--bg-chip);
+            border: 1px solid var(--border-chip);
+            border-radius: 999px;
+            white-space: nowrap;
+        }
+
+        .role-body {
+            padding: 1.25rem;
+        }
+
+        .role-points {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.85rem 1.5rem;
+        }
+
+        .role-points li {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.7rem;
+            font-size: 0.94rem;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        .point-check {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--bg-chip);
+            color: var(--teal-text);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 0.18rem;
+        }
+
+        .point-check .icon {
+            width: 12px;
+            height: 12px;
+            stroke-width: 2.6;
+        }
+
+        .point-lead {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* Premium SEO Experience & Project Skills Showcase Card */
+        .seo-experience-card {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-chip);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: border-color var(--transition), box-shadow var(--transition);
+        }
+
+        .seo-experience-card:hover {
+            border-color: var(--teal);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .seo-card-banner {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1.35rem 1.25rem;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.04) 0%, rgba(20, 184, 166, 0.11) 100%);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        [data-theme="dark"] .seo-card-banner {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.45) 0%, rgba(20, 184, 166, 0.16) 100%);
+        }
+
+        .seo-banner-left {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            min-width: 0;
+        }
+
+        .seo-banner-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background-color: var(--navy);
+            color: #2DD4BF;
+            border: 1.5px solid var(--teal);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            box-shadow: var(--shadow-sm);
+        }
+
+        [data-theme="dark"] .seo-banner-icon {
+            background-color: rgba(20, 184, 166, 0.16);
+            color: #2DD4BF;
+        }
+
+        .seo-banner-title {
+            font-size: 1.22rem;
+            font-weight: 700;
+            margin-bottom: 0.2rem;
+        }
+
+        .seo-banner-sub {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .seo-pillars-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            padding: 1.25rem;
+        }
+
+        .seo-pillar {
+            background-color: var(--bg-page);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1.35rem 1.4rem;
+            transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+        }
+
+        .seo-pillar:hover {
+            transform: translateY(-3px);
+            border-color: var(--teal);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .seo-pillar-head {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            margin-bottom: 0.95rem;
+            padding-bottom: 0.7rem;
+            border-bottom: 1px dashed var(--border-strong);
+        }
+
+        .seo-pillar-icon {
+            width: 34px;
+            height: 34px;
+            border-radius: 9px;
+            background-color: var(--bg-chip);
+            border: 1px solid var(--border-chip);
+            color: var(--teal-text);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .seo-pillar-title {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .seo-pillar-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.65rem;
+        }
+
+        .seo-pillar-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+            font-size: 0.91rem;
+            line-height: 1.55;
+            color: var(--text-secondary);
+        }
+
+        .seo-pillar-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: var(--teal);
+            flex-shrink: 0;
+            margin-top: 0.56em;
+        }
+
+        .seo-card-footer {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.55rem;
+            padding: 1rem 1.25rem 1.15rem;
+            background-color: var(--bg-subtle);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .seo-footer-label {
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-muted);
+            margin-right: 0.25rem;
+        }
+
+        .seo-mini-tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.26rem 0.68rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--teal-text);
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 999px;
+        }
+
+        /* ==========================================================================
+       11. Education Section
+       ========================================================================== */
+        .education-card {
+            display: flex;
+            align-items: center;
+            gap: 1.15rem;
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1.65rem 1.85rem;
+            box-shadow: var(--shadow-sm);
+            max-width: 720px;
+        }
+
+        .education-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            background-color: var(--bg-chip);
+            border: 1px solid var(--border-chip);
+            color: var(--teal-text);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .education-degree {
+            font-size: 1.18rem;
+            font-weight: 700;
+        }
+
+        /* ==========================================================================
+       12. Strengths (6 Compact Cards)
+       ========================================================================== */
+        .strengths-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        .strength-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.95rem;
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1.3rem;
+            box-shadow: var(--shadow-sm);
+            transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+        }
+
+        .strength-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--teal);
+            box-shadow: var(--shadow-md);
+        }
+
+        .strength-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: var(--bg-chip);
+            color: var(--teal-text);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .strength-card h3 {
+            font-size: 0.98rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .strength-card p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.55;
+        }
+
+        /* ==========================================================================
+       13. Contact Section & Form
+       ========================================================================== */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.75rem;
+            align-items: start;
+        }
+
+        .contact-panel,
+        .contact-form-card {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1.85rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .contact-panel h3,
+        .contact-form-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .contact-intro {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-row {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+        }
+
+        .contact-row-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: var(--bg-subtle);
+            color: var(--teal-text);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-row-label {
+            display: block;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .contact-row-value {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            overflow-wrap: anywhere;
+        }
+
+        .contact-cta-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        /* Form Controls */
+        .form-grid {
+            display: grid;
+            gap: 1.1rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .form-label {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem 0.95rem;
+            background-color: var(--bg-page);
+            color: var(--text-primary);
+            border: 1.5px solid var(--border-strong);
+            border-radius: var(--radius-sm);
+            font-size: 0.95rem;
+            transition: border-color var(--transition), box-shadow var(--transition), background-color var(--transition);
+        }
+
+        .form-control::placeholder {
+            color: var(--text-muted);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--teal);
+            box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.2);
+        }
+
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-honeypot {
+            position: absolute;
+            left: -9999px;
+            width: 1px;
+            height: 1px;
+            opacity: 0;
+        }
+
+        .form-status {
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-radius: var(--radius-sm);
+            padding: 0;
+            margin: 0;
+            min-height: 1.25rem;
+        }
+
+        .form-status.is-success {
+            padding: 0.75rem 0.95rem;
+            background-color: var(--bg-chip);
+            border: 1px solid var(--border-chip);
+            color: var(--teal-text);
+        }
+
+        .form-status.is-error {
+            padding: 0.75rem 0.95rem;
+            background-color: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.35);
+            color: #B91C1C;
+        }
+
+        [data-theme="dark"] .form-status.is-error {
+            color: #FCA5A5;
+        }
+
+        /* ==========================================================================
+       14. Footer & Back-to-Top Button
+       ========================================================================== */
+        .site-footer {
+            background-color: var(--navy);
+            color: #CBD5E1;
+            padding-block: 2.75rem;
+            border-top: 1px solid #1E293B;
+        }
+
+        .footer-inner {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .footer-top {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            justify-content: space-between;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+        }
+
+        .footer-brand {
+            color: #F8FAFC;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .footer-tagline {
+            font-size: 0.88rem;
+            color: #94A3B8;
+            margin-top: 0.25rem;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.85rem 1.35rem;
+        }
+
+        .footer-links a {
+            color: #CBD5E1;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .footer-links a:hover {
+            color: #2DD4BF;
+        }
+
+        .footer-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            font-size: 0.86rem;
+            color: #94A3B8;
+        }
+
+        .footer-top-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            color: #2DD4BF;
+            font-weight: 600;
+            font-size: 0.88rem;
+        }
+
+        .footer-top-link:hover {
+            color: #F8FAFC;
+        }
+
+        /* Floating Back-to-Top Button */
+        .back-to-top {
+            position: fixed;
+            right: 1.25rem;
+            bottom: 1.25rem;
+            z-index: 90;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 1.5px solid var(--teal);
+            background-color: var(--navy);
+            color: #F8FAFC;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(12px);
+            transition: opacity var(--transition), transform var(--transition), visibility var(--transition), background-color var(--transition);
+        }
+
+        .back-to-top.is-visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            background-color: var(--teal);
+            color: #0F172A;
+        }
+
+        /* ==========================================================================
+       15. Scroll Reveal Animation (Independent `translate` preserves hover lift)
+       ========================================================================== */
+        .js-enabled .reveal {
+            opacity: 0;
+            translate: 0 18px;
+            transition: opacity 520ms cubic-bezier(0.22, 1, 0.36, 1),
+                translate 520ms cubic-bezier(0.22, 1, 0.36, 1),
+                transform var(--transition),
+                border-color var(--transition),
+                box-shadow var(--transition);
+        }
+
+        .js-enabled .reveal.is-visible {
+            opacity: 1;
+            translate: 0 0;
+        }
+
+        /* ==========================================================================
+       16. Responsive Breakpoints (640px, 900px, 1120px+)
+       ========================================================================== */
+        @media (min-width: 640px) {
+            .quick-facts {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .strengths-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .role-header {
+                padding: 1.5rem 1.75rem 1.25rem;
+            }
+
+            .role-body {
+                padding: 1.45rem 1.75rem 1.65rem;
+            }
+
+            .seo-card-banner {
+                padding: 1.65rem 1.85rem;
+            }
+
+            .seo-pillars-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.15rem;
+                padding: 1.65rem 1.85rem;
+            }
+
+            .seo-card-footer {
+                padding: 1rem 1.85rem 1.25rem;
+            }
+        }
+
+        @media (min-width: 900px) {
+            .role-points {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .section {
+                padding-block: 5.5rem;
+            }
+
+            .nav-links {
+                display: flex;
+            }
+
+            #menu-toggle {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: none;
+            }
+
+            .hero {
+                padding-block: 5rem 4.25rem;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1.35fr 0.65fr;
+                gap: 3rem;
+            }
+
+            .hero-visual {
+                justify-content: flex-end;
+            }
+
+            .quick-facts {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .strengths-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .contact-grid {
+                grid-template-columns: 0.95fr 1.05fr;
+                gap: 2rem;
+            }
+
+            .footer-top {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+        /* Comfortable navbar fit on narrow desktop widths */
+        @media (min-width: 900px) and (max-width: 1099px) {
+            .nav-link {
+                padding: 0.45rem 0.5rem;
+                font-size: 0.86rem;
+            }
+        }
+
+        @media (min-width: 1120px) {
+            .process-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* ==========================================================================
+       17. Reduced Motion Accessibility
+       ========================================================================== */
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+
+            .js-enabled .reveal {
+                opacity: 1;
+                translate: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ========================================================================
+       Sticky Navigation Header
+       ======================================================================== -->
+    <header class="site-header">
+        <div class="container nav-bar">
+            <a href="#home" class="brand" aria-label="Gulshan Nasreen — Back to top">
+                <span class="brand-mark" aria-hidden="true">GN</span>
+                <span>Gulshan Nasreen</span>
+            </a>
+
+            <nav aria-label="Primary navigation">
+                <ul class="nav-links">
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#services">Services</a></li>
+                    <li><a class="nav-link" href="#how-i-work">How I Work</a></li>
+                    <li><a class="nav-link" href="#skills">Skills</a></li>
+                    <li><a class="nav-link" href="#experience">Experience</a></li>
+                    <li><a class="nav-link" href="#education">Education</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button type="button" id="theme-toggle" class="icon-btn" aria-label="Switch to dark theme"
+                    aria-pressed="false">
+                    <svg class="icon icon--md icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" />
+                    </svg>
+                    <svg class="icon icon--md icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4" />
+                        <path
+                            d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+                    </svg>
+                </button>
+
+                <button type="button" id="menu-toggle" class="icon-btn" aria-label="Open navigation menu"
+                    aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="icon icon--md icon-menu" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg class="icon icon--md icon-close" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M18 6 6 18M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation">
+            <ul class="mobile-menu-list">
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#services">Services</a></li>
+                <li><a class="nav-link" href="#how-i-work">How I Work</a></li>
+                <li><a class="nav-link" href="#skills">Skills</a></li>
+                <li><a class="nav-link" href="#experience">Experience</a></li>
+                <li><a class="nav-link" href="#education">Education</a></li>
+                <li><a class="nav-link" href="#strengths">Strengths</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ========================================================================
+       Main Content
+       ======================================================================== -->
+    <main id="main-content">
+
+        <!-- 1. HERO SECTION -->
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <!-- Subtle Decorative SVG Grid -->
+            <svg class="hero-pattern" width="100%" height="100%" aria-hidden="true">
+                <defs>
+                    <pattern id="subtle-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="0.6"
+                            opacity="0.14" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#subtle-grid)" />
+            </svg>
+
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <span class="hero-badge-dot" aria-hidden="true"></span>
+                            <span>Lahore, Pakistan</span>
+                        </div>
+
+                        <h1 id="hero-heading" class="hero-title">
+                            Gulshan Nasreen
+                            <span class="hero-headline">Administration &amp; SEO Professional</span>
+                        </h1>
+
+                        <p class="hero-value">
+                            Combining 5 years of administrative experience with hands-on SEO and WordPress optimization
+                            to keep office operations organized and websites search-ready.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a href="#contact" class="btn btn-primary">
+                                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                </svg>
+                                <span>Contact Me</span>
+                            </a>
+                            <!-- NOTE: Rename your CV PDF to Gulshan_Nasreen_CV.pdf in the same folder -->
+                            <a href="Gulshan_Nasreen_CV.pdf" class="btn btn-secondary" download>
+                                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                    <polyline points="7 10 12 15 17 10" />
+                                    <line x1="12" y1="15" x2="12" y2="3" />
+                                </svg>
+                                <span>Download CV</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="avatar-card">
+                            <div class="avatar-ring">
+                                <!-- ADD: Professional headshot photo — replace the div below with:
+                <img src="gulshan-nasreen.jpg" alt="Gulshan Nasreen" width="140" height="140" style="width:100%;height:100%;object-fit:cover;border-radius:50%;border:3px solid var(--bg-surface);"> -->
+                                <div class="avatar-initials" role="img" aria-label="Gulshan Nasreen initials avatar">GN
+                                </div>
+                            </div>
+                            <div class="avatar-caption">
+                                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                <span>Lahore, Pakistan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick-Facts Strip -->
+                <ul class="quick-facts reveal" aria-label="Career highlights">
+                    <li class="fact-item">
+                        <span class="fact-icon" aria-hidden="true">
+                            <svg class="icon icon--md" viewBox="0 0 24 24">
+                                <rect x="2" y="7" width="20" height="14" rx="2" />
+                                <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                            </svg>
+                        </span>
+                        <span class="fact-label">5 Years Administrative Experience</span>
+                    </li>
+                    <li class="fact-item">
+                        <span class="fact-icon" aria-hidden="true">
+                            <svg class="icon icon--md" viewBox="0 0 24 24">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                <path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5" />
+                            </svg>
+                        </span>
+                        <span class="fact-label">MSc Computer Science</span>
+                    </li>
+                    <li class="fact-item">
+                        <span class="fact-icon" aria-hidden="true">
+                            <svg class="icon icon--md" viewBox="0 0 24 24">
+                                <path d="M3 21h18M4 21V9l8-5 8 5v12M9 21v-6h6v6" />
+                            </svg>
+                        </span>
+                        <span class="fact-label">2 Institutions</span>
+                    </li>
+                    <li class="fact-item">
+                        <span class="fact-icon" aria-hidden="true">
+                            <svg class="icon icon--md" viewBox="0 0 24 24">
+                                <circle cx="11" cy="11" r="8" />
+                                <path d="m21 21-4.3-4.3" />
+                                <path d="M11 8v6M8 11h6" />
+                            </svg>
+                        </span>
+                        <span class="fact-label">WordPress • Search Console • Analytics</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 2. ABOUT SECTION -->
+        <section id="about" class="section section--alt" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">About Me</span>
+                    <h2 id="about-heading" class="section-title">Organized Operations Meets Search Visibility</h2>
+                </div>
+
+                <div class="about-card reveal">
+                    <p>
+                        I am a results-oriented Administration and SEO professional based in Lahore, Pakistan, combining
+                        5 years of administrative experience with practical knowledge of search engine optimization,
+                        WordPress, keyword research, content optimization, and link building. As an MSc Computer Science
+                        graduate, I bring strong organizational, analytical, communication, and problem-solving skills
+                        to every assignment.
+                    </p>
+                    <p>
+                        Across my work, I have managed office operations, documentation, records, coordination, and
+                        digital tasks while consistently maintaining accuracy and meeting deadlines. Whether supporting
+                        daily administrative workflows or improving website structure and search visibility, I focus on
+                        reliable execution and clear communication.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SERVICES SECTION -->
+        <section id="services" class="section" aria-labelledby="services-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Services</span>
+                    <h2 id="services-heading" class="section-title">How I Can Help Your Team or Business</h2>
+                    <p class="section-subtitle">
+                        Hands-on SEO execution and dependable administrative support for businesses, teams, and
+                        institutions.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="card reveal">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg class="icon icon--lg" viewBox="0 0 24 24">
+                                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <path d="m10 13-2 2 2 2M14 17l2-2-2-2" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">On-Page SEO</h3>
+                        <p class="card-text">
+                            I optimize page titles, meta descriptions, headings, URLs, and internal links so pages are
+                            structured clearly for search engines and readers.
+                        </p>
+                    </article>
+
+                    <article class="card reveal">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg class="icon icon--lg" viewBox="0 0 24 24">
+                                <circle cx="7.5" cy="15.5" r="4.5" />
+                                <path d="m21 2-9.6 9.6M15.5 7.5l3 3L22 7l-3-3" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Keyword Research &amp; Content Optimization</h3>
+                        <p class="card-text">
+                            I research target keywords, identify relevant search opportunities, and create or refine
+                            SEO-friendly content aligned with search intent.
+                        </p>
+                    </article>
+
+                    <article class="card reveal">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg class="icon icon--lg" viewBox="0 0 24 24">
+                                <rect x="8" y="2" width="8" height="4" rx="1" />
+                                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                                <path d="m9 14 2 2 4-4" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Website Audits &amp; SERP/Competitor Analysis</h3>
+                        <p class="card-text">
+                            I conduct basic on-page and technical SEO audits, review competitor search results, and
+                            prepare clear recommendations for improvement.
+                        </p>
+                    </article>
+
+                    <article class="card reveal">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg class="icon icon--lg" viewBox="0 0 24 24">
+                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Off-Page SEO &amp; Link Building</h3>
+                        <p class="card-text">
+                            I support site authority by building and managing backlinks using quality-focused off-page
+                            SEO strategies.
+                        </p>
+                    </article>
+
+                    <article class="card reveal">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg class="icon icon--lg" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M2 12h20" />
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">WordPress Page/Content Optimization</h3>
+                        <p class="card-text">
+                            I optimize WordPress pages and posts—improving headings, metadata, content structure, and
+                            internal linking directly within the CMS.
+                        </p>
+                    </article>
+
+                    <article class="card reveal">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg class="icon icon--lg" viewBox="0 0 24 24">
+                                <path
+                                    d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Administrative &amp; Office Support</h3>
+                        <p class="card-text">
+                            I manage records, documentation, reporting, scheduling, and stakeholder coordination while
+                            maintaining accuracy and deadlines.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. HOW I WORK SECTION -->
+        <section id="how-i-work" class="section section--alt" aria-labelledby="process-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Workflow</span>
+                    <h2 id="process-heading" class="section-title">How I Work</h2>
+                    <p class="section-subtitle">
+                        A structured four-step process from initial research to ongoing tracking and reporting.
+                    </p>
+                </div>
+
+                <ol class="process-grid">
+                    <li class="process-step reveal">
+                        <span class="step-number" aria-hidden="true">01</span>
+                        <h3>Research &amp; Audit</h3>
+                        <p>
+                            Review website pages, indexing status, competitors, SERP results, and keyword opportunities
+                            to identify key priorities.
+                        </p>
+                    </li>
+
+                    <li class="process-step reveal">
+                        <span class="step-number" aria-hidden="true">02</span>
+                        <h3>Optimize</h3>
+                        <p>
+                            Refine headings, URLs, meta titles, meta descriptions, internal links, and WordPress content
+                            around user search intent.
+                        </p>
+                    </li>
+
+                    <li class="process-step reveal">
+                        <span class="step-number" aria-hidden="true">03</span>
+                        <h3>Build Authority</h3>
+                        <p>
+                            Build and manage backlinks through consistent, quality-focused off-page SEO activities.
+                        </p>
+                    </li>
+
+                    <li class="process-step reveal">
+                        <span class="step-number" aria-hidden="true">04</span>
+                        <h3>Track &amp; Report</h3>
+                        <p>
+                            Monitor keywords, indexing, and performance in Google Search Console and Analytics, sharing
+                            clear reports and recommendations.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- 5. SKILLS SECTION -->
+        <section id="skills" class="section" aria-labelledby="skills-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Core Capabilities</span>
+                    <h2 id="skills-heading" class="section-title">Skills &amp; Tools</h2>
+                    <p class="section-subtitle">
+                        Grouped across search engine optimization, everyday software tools, and administrative
+                        operations.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-group reveal">
+                        <div class="skill-group-header">
+                            <svg class="icon icon--md" viewBox="0 0 24 24" aria-hidden="true">
+                                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                                <polyline points="16 7 22 7 22 13" />
+                            </svg>
+                            <h3>SEO &amp; Digital Marketing</h3>
+                        </div>
+                        <ul class="chip-list">
+                            <li class="chip">On-Page SEO</li>
+                            <li class="chip">Off-Page SEO &amp; Link Building</li>
+                            <li class="chip">Keyword Research</li>
+                            <li class="chip">Content Optimization</li>
+                            <li class="chip">Website Audits &amp; SEO Analysis</li>
+                            <li class="chip">Competitor &amp; SERP Research</li>
+                            <li class="chip">Meta Titles &amp; Descriptions</li>
+                            <li class="chip">Internal Linking</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group reveal">
+                        <div class="skill-group-header">
+                            <svg class="icon icon--md" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                            </svg>
+                            <h3>Tools</h3>
+                        </div>
+                        <ul class="chip-list">
+                            <li class="chip">WordPress</li>
+                            <li class="chip">Google Search Console</li>
+                            <li class="chip">Google Analytics</li>
+                            <li class="chip">Microsoft Excel</li>
+                            <li class="chip">Microsoft Word</li>
+                            <li class="chip">Microsoft PowerPoint</li>
+                            <li class="chip">SEO Tools &amp; SERP Research</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group reveal">
+                        <div class="skill-group-header">
+                            <svg class="icon icon--md" viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="2" y="7" width="20" height="14" rx="2" />
+                                <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                            </svg>
+                            <h3>Administration &amp; Office</h3>
+                        </div>
+                        <ul class="chip-list">
+                            <li class="chip">Administration &amp; Office Operations</li>
+                            <li class="chip">Reporting &amp; Documentation</li>
+                            <li class="chip">Team Coordination</li>
+                            <li class="chip">Internet &amp; Email</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. EXPERIENCE SECTION -->
+        <section id="experience" class="section section--alt" aria-labelledby="experience-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Background</span>
+                    <h2 id="experience-heading" class="section-title">Experience &amp; Applied SEO Skills</h2>
+                    <p class="section-subtitle">
+                        Five years of institutional administrative experience paired with hands-on SEO and WordPress
+                        execution.
+                    </p>
+                </div>
+
+                <!-- Track 1: Administrative Career Timeline -->
+                <div class="exp-track">
+                    <div class="exp-track-header reveal">
+                        <span class="exp-track-label">
+                            <svg class="icon icon--md" viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="2" y="7" width="20" height="14" rx="2" />
+                                <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                            </svg>
+                            <span>Administrative Experience</span>
+                        </span>
+                        <span class="exp-track-meta">5 Years Total • 2 Institutions</span>
+                    </div>
+
+                    <div class="timeline">
+                        <article class="timeline-item reveal">
+                            <div class="role-header">
+                                <div class="role-heading-wrap">
+                                    <span class="role-icon" aria-hidden="true">
+                                        <svg class="icon icon--lg" viewBox="0 0 24 24">
+                                            <path d="M3 21h18M4 21V9l8-5 8 5v12M9 21v-6h6v6" />
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <h3 class="role-title">Administrative Officer / Administration</h3>
+                                        <p class="role-org">
+                                            <strong>Afro Asian Institute</strong>
+                                            <span aria-hidden="true">•</span>
+                                            <span>Lahore</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="duration-badge">
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <polyline points="12 6 12 12 16 14" />
+                                    </svg>
+                                    <span>3 Years</span>
+                                </span>
+                            </div>
+
+                            <div class="role-body">
+                                <ul class="role-points">
+                                    <li>
+                                        <span class="point-check" aria-hidden="true">
+                                            <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg>
+                                        </span>
+                                        <span><span class="point-lead">Office Operations:</span> Managed day-to-day administrative and office operations across the institute.</span>
+                                    </li>
+                                    <li>
+                                        <span class="point-check" aria-hidden="true">
+                                            <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg>
+                                        </span>
+                                        <span><span class="point-lead">Records &amp; Databases:</span> Maintained files, records, databases, correspondence, and official documentation accurately.</span>
+                                    </li>
+                                    <li>
+                                        <span class="point-check" aria-hidden="true">
+                                            <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg>
+                                        </span>
+                                        <span><span class="point-lead">Stakeholder Coordination:</span> Coordinated communication with management, staff, students, visitors, and other stakeholders.</span>
+                                    </li>
+                                    <li>
+                                        <span class="point-check" aria-hidden="true">
+                                            <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg>
+                                        </span>
+                                        <span><span class="point-lead">Reporting &amp; Schedules:</span> Prepared reports, schedules, notices, and routine administrative documents.</span>
+                                    </li>
+                                    <li>
+                                        <span class="point-check" aria-hidden="true">
+                                            <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg>
+                                        </span>
+                                        <span><span class="point-lead">Front-Desk &amp; Attendance:</span> Handled calls, inquiries, front-desk activities, attendance records, and staff administrative requirements.</span>
+                                    </li>
+                                    <li>
+                                        <span class="point-check" aria-hidden="true">
+                                            <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg>
+                                        </span>
+                                        <span><span class="point-lead">Management Support:</span> Assisted management with coordination, planning, and routine operational tasks.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item reveal">
+                            <div class="role-header">
+                                <div class="role-heading-wrap">
+                                    <span class="role-icon" aria-hidden="true">
+                                        <svg class="icon icon--lg" viewBox="0 0 24 24">
+                                            <path d="M3 21h18M4 21V9l8-5 8 5v12M9 21v-6h6v6" />
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <h3 class="role-title">Administration</h3>
+                                        <p class="role-org">
+                                            <strong>Abbas Institute of Medical Science</strong>
+                                            <span aria-hidden="true">•</span>
+                                            <span>Layyah</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="duration-badge">
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <polyline points="12 6 12 12 16 14" />
+                                    </svg>
+                                    <span>2 Years</span>
+                                </span>
+                            </div>
+
+                            <div class="role-body">
+                                <ul class="role-points">
+                                    <li>
+                                        <span class="point-check" aria-hidden="true">
+                                            <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg>
+                                        </span>
+                                        <span><span class="point-lead">Daily Administration:</span> Managed daily administrative activities and maintained organized office records.</span>
+                                    </li>
+                                    <li>
+                                        <span class="point-check" aria-hidden="true">
+                                            <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg>
+                                        </span>
+                                        <span><span class="point-lead">Registers &amp; Documentation:</span> Prepared and maintained registers, files, reports, and official documentation.</span>
+                                    </li>
+                                    <li>
+                                        <span class="point-check" aria-hidden="true">
+                                            <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg>
+                                        </span>
+                                        <span><span class="point-lead">Team &amp; Visitor Coordination:</span> Coordinated with staff, students, visitors, and management for smooth communication.</span>
+                                    </li>
+                                    <li>
+                                        <span class="point-check" aria-hidden="true">
+                                            <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg>
+                                        </span>
+                                        <span><span class="point-lead">Office Communication:</span> Handled correspondence, scheduling, inquiries, and routine office communication.</span>
+                                    </li>
+                                    <li>
+                                        <span class="point-check" aria-hidden="true">
+                                            <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg>
+                                        </span>
+                                        <span><span class="point-lead">Operations &amp; Issue Resolution:</span> Supported management in planning day-to-day operations and helped resolve administrative issues professionally.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Track 2: SEO Experience & Project Skills Showcase -->
+                <div class="exp-track">
+                    <div class="exp-track-header reveal">
+                        <span class="exp-track-label">
+                            <svg class="icon icon--md" viewBox="0 0 24 24" aria-hidden="true">
+                                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                                <polyline points="16 7 22 7 22 13" />
+                            </svg>
+                            <span>Applied SEO &amp; WordPress</span>
+                        </span>
+                        <span class="exp-track-meta">4 Core Practice Areas</span>
+                    </div>
+
+                    <article class="seo-experience-card reveal" aria-labelledby="seo-skills-heading">
+                        <div class="seo-card-banner">
+                            <div class="seo-banner-left">
+                                <span class="seo-banner-icon" aria-hidden="true">
+                                    <svg class="icon icon--lg" viewBox="0 0 24 24">
+                                        <circle cx="11" cy="11" r="8" />
+                                        <path d="m21 21-4.3-4.3" />
+                                        <path d="M11 8v6M8 11h6" />
+                                    </svg>
+                                </span>
+                                <div>
+                                    <h3 id="seo-skills-heading" class="seo-banner-title">SEO Experience &amp; Project Skills</h3>
+                                    <p class="seo-banner-sub">Practical search optimization, WordPress content work, and performance monitoring.</p>
+                                </div>
+                            </div>
+                            <span class="duration-badge">Hands-On Practice</span>
+                        </div>
+
+                        <div class="seo-pillars-grid">
+                            <div class="seo-pillar">
+                                <div class="seo-pillar-head">
+                                    <span class="seo-pillar-icon" aria-hidden="true">
+                                        <svg class="icon" viewBox="0 0 24 24">
+                                            <circle cx="7.5" cy="15.5" r="4.5" />
+                                            <path d="m21 2-9.6 9.6M15.5 7.5l3 3L22 7l-3-3" />
+                                        </svg>
+                                    </span>
+                                    <h4 class="seo-pillar-title">Keyword &amp; SERP Research</h4>
+                                </div>
+                                <ul class="seo-pillar-list">
+                                    <li>
+                                        <span class="seo-pillar-dot" aria-hidden="true"></span>
+                                        <span>Conduct keyword research and identify relevant search opportunities.</span>
+                                    </li>
+                                    <li>
+                                        <span class="seo-pillar-dot" aria-hidden="true"></span>
+                                        <span>Perform competitor and SERP analysis to guide optimization decisions.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="seo-pillar">
+                                <div class="seo-pillar-head">
+                                    <span class="seo-pillar-icon" aria-hidden="true">
+                                        <svg class="icon" viewBox="0 0 24 24">
+                                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                                            <polyline points="14 2 14 8 20 8" />
+                                            <line x1="8" y1="13" x2="16" y2="13" />
+                                            <line x1="8" y1="17" x2="13" y2="17" />
+                                        </svg>
+                                    </span>
+                                    <h4 class="seo-pillar-title">On-Page &amp; Content Optimization</h4>
+                                </div>
+                                <ul class="seo-pillar-list">
+                                    <li>
+                                        <span class="seo-pillar-dot" aria-hidden="true"></span>
+                                        <span>Optimize pages, headings, URLs, meta titles, and meta descriptions.</span>
+                                    </li>
+                                    <li>
+                                        <span class="seo-pillar-dot" aria-hidden="true"></span>
+                                        <span>Create SEO-friendly content aligned with user search intent.</span>
+                                    </li>
+                                    <li>
+                                        <span class="seo-pillar-dot" aria-hidden="true"></span>
+                                        <span>Improve internal linking, content structure, and overall page optimization.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="seo-pillar">
+                                <div class="seo-pillar-head">
+                                    <span class="seo-pillar-icon" aria-hidden="true">
+                                        <svg class="icon" viewBox="0 0 24 24">
+                                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                                        </svg>
+                                    </span>
+                                    <h4 class="seo-pillar-title">WordPress &amp; Off-Page SEO</h4>
+                                </div>
+                                <ul class="seo-pillar-list">
+                                    <li>
+                                        <span class="seo-pillar-dot" aria-hidden="true"></span>
+                                        <span>Optimize pages and content directly inside WordPress.</span>
+                                    </li>
+                                    <li>
+                                        <span class="seo-pillar-dot" aria-hidden="true"></span>
+                                        <span>Build and manage backlinks using quality-focused off-page strategies.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="seo-pillar">
+                                <div class="seo-pillar-head">
+                                    <span class="seo-pillar-icon" aria-hidden="true">
+                                        <svg class="icon" viewBox="0 0 24 24">
+                                            <rect x="8" y="2" width="8" height="4" rx="1" />
+                                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                                            <path d="m9 14 2 2 4-4" />
+                                        </svg>
+                                    </span>
+                                    <h4 class="seo-pillar-title">Audits, Indexing &amp; Reporting</h4>
+                                </div>
+                                <ul class="seo-pillar-list">
+                                    <li>
+                                        <span class="seo-pillar-dot" aria-hidden="true"></span>
+                                        <span>Perform basic on-page and technical SEO audits.</span>
+                                    </li>
+                                    <li>
+                                        <span class="seo-pillar-dot" aria-hidden="true"></span>
+                                        <span>Monitor indexing, search performance, and keywords in Google Search Console.</span>
+                                    </li>
+                                    <li>
+                                        <span class="seo-pillar-dot" aria-hidden="true"></span>
+                                        <span>Track SEO performance and prepare basic reports and recommendations.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="seo-card-footer" aria-label="Core SEO workflow areas">
+                            <span class="seo-footer-label">Focus Areas:</span>
+                            <span class="seo-mini-tag">WordPress</span>
+                            <span class="seo-mini-tag">Google Search Console</span>
+                            <span class="seo-mini-tag">On-Page &amp; Technical Audits</span>
+                            <span class="seo-mini-tag">SERP Analysis</span>
+                            <span class="seo-mini-tag">Backlink Management</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+         OPTIONAL TEMPLATE: PROJECTS / CASE STUDIES (Hidden Until Ready)
+         When you have real SEO or administrative projects to showcase, remove
+         the HTML comment markers around this section and add a matching link
+         to the navigation bar (#projects).
+         ====================================================================== -->
+        <!--
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Portfolio</span>
+          <h2 id="projects-heading" class="section-title">Selected Projects &amp; Case Studies</h2>
+          <p class="section-subtitle">
+            Real examples of website audits, WordPress optimizations, and administrative workflows.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="card reveal">
+            <span class="duration-badge" style="margin-bottom: 0.9rem;">On-Page SEO • WordPress</span>
+            <h3 class="card-title">[Project Name — e.g., Local Business Website Optimization]</h3>
+            <p class="card-text" style="margin-bottom: 0.85rem;">
+              <strong>Challenge:</strong> [Brief 1-sentence summary of the starting problem.]
+            </p>
+            <p class="card-text" style="margin-bottom: 0.85rem;">
+              <strong>Actions Taken:</strong> [Keyword research, title/meta updates, heading fixes, internal linking, Search Console checks.]
+            </p>
+            <p class="card-text">
+              <strong>Outcome:</strong> [Factual, verified result or deliverable completed.]
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <span class="duration-badge" style="margin-bottom: 0.9rem;">SEO Audit &amp; Keyword Research</span>
+            <h3 class="card-title">[Project Name — e.g., Technical &amp; On-Page Audit]</h3>
+            <p class="card-text" style="margin-bottom: 0.85rem;">
+              <strong>Challenge:</strong> [Brief 1-sentence summary of the starting problem.]
+            </p>
+            <p class="card-text" style="margin-bottom: 0.85rem;">
+              <strong>Actions Taken:</strong> [What you audited, analyzed, and documented.]
+            </p>
+            <p class="card-text">
+              <strong>Outcome:</strong> [Verified deliverable or measurable improvement.]
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    -->
+
+        <!-- 7. EDUCATION SECTION -->
+        <section id="education" class="section" aria-labelledby="education-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Academic Background</span>
+                    <h2 id="education-heading" class="section-title">Education</h2>
+                </div>
+
+                <article class="education-card reveal">
+                    <div class="education-icon" aria-hidden="true">
+                        <svg class="icon icon--xl" viewBox="0 0 24 24">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                            <path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="education-degree">Master of Science (MSc) in Computer Science</h3>
+                        <!-- ADD: university name (e.g., <p class="role-org">University Name, City</p>) -->
+                        <!-- ADD: graduation year (e.g., <span class="duration-badge">20XX</span>) -->
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 8. STRENGTHS SECTION -->
+        <section id="strengths" class="section section--alt" aria-labelledby="strengths-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Work Ethic</span>
+                    <h2 id="strengths-heading" class="section-title">Key Strengths</h2>
+                    <p class="section-subtitle">
+                        Core professional qualities I apply to every administrative and SEO task.
+                    </p>
+                </div>
+
+                <div class="strengths-grid">
+                    <article class="strength-card reveal">
+                        <span class="strength-icon" aria-hidden="true">
+                            <svg class="icon icon--md" viewBox="0 0 24 24">
+                                <rect x="3" y="4" width="18" height="18" rx="2" />
+                                <path d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Organization &amp; Time Management</h3>
+                            <p>Keeping records, schedules, and recurring tasks structured and on track.</p>
+                        </div>
+                    </article>
+
+                    <article class="strength-card reveal">
+                        <span class="strength-icon" aria-hidden="true">
+                            <svg class="icon icon--md" viewBox="0 0 24 24">
+                                <path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Analytical &amp; Problem-Solving Mindset</h3>
+                            <p>Evaluating operational issues, SEO audits, and content gaps methodically.</p>
+                        </div>
+                    </article>
+
+                    <article class="strength-card reveal">
+                        <span class="strength-icon" aria-hidden="true">
+                            <svg class="icon icon--md" viewBox="0 0 24 24">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Communication &amp; Coordination</h3>
+                            <p>Clear, professional correspondence with management, teams, and stakeholders.</p>
+                        </div>
+                    </article>
+
+                    <article class="strength-card reveal">
+                        <span class="strength-icon" aria-hidden="true">
+                            <svg class="icon icon--md" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" />
+                                <circle cx="12" cy="12" r="6" />
+                                <circle cx="12" cy="12" r="2" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Attention to Detail &amp; Accuracy</h3>
+                            <p>Careful review across official documentation, records, metadata, and SEO checks.</p>
+                        </div>
+                    </article>
+
+                    <article class="strength-card reveal">
+                        <span class="strength-icon" aria-hidden="true">
+                            <svg class="icon icon--md" viewBox="0 0 24 24">
+                                <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+                                <path d="M3 3v5h5" />
+                                <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16" />
+                                <path d="M16 16h5v5" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Quick Learner &amp; Adaptable</h3>
+                            <p>Comfortable picking up new tools, workflows, and guidelines efficiently.</p>
+                        </div>
+                    </article>
+
+                    <article class="strength-card reveal">
+                        <span class="strength-icon" aria-hidden="true">
+                            <svg class="icon icon--md" viewBox="0 0 24 24">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                                <polyline points="2 17 12 22 22 17" />
+                                <polyline points="2 12 12 17 22 12" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Multitasking &amp; Deadlines</h3>
+                            <p>Managing multiple administrative and digital tasks reliably without missing timelines.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. CONTACT SECTION -->
+        <section id="contact" class="section" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Get In Touch</span>
+                    <h2 id="contact-heading" class="section-title">Let's Discuss Your Role or Project</h2>
+                    <p class="section-subtitle">
+                        Reach out to discuss administrative or SEO roles, remote opportunities, or freelance support.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Direct Contact Information -->
+                    <div class="contact-panel reveal">
+                        <h3>Direct Contact</h3>
+                        <p class="contact-intro">
+                            Prefer a direct conversation? Connect by email or WhatsApp.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-row">
+                                <span class="contact-row-icon" aria-hidden="true">
+                                    <svg class="icon icon--md" viewBox="0 0 24 24">
+                                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                    </svg>
+                                </span>
+                                <div>
+                                    <span class="contact-row-label">Email</span>
+                                    <a class="contact-row-value"
+                                        href="mailto:gulshannasreen12@gmail.com">gulshannasreen12@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-row">
+                                <span class="contact-row-icon" aria-hidden="true">
+                                    <svg class="icon icon--md" viewBox="0 0 24 24">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                    </svg>
+                                </span>
+                                <div>
+                                    <span class="contact-row-label">Phone / WhatsApp</span>
+                                    <a class="contact-row-value" href="https://wa.me/923047923657" target="_blank"
+                                        rel="noopener noreferrer">0304-7923657</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-row">
+                                <span class="contact-row-icon" aria-hidden="true">
+                                    <svg class="icon icon--md" viewBox="0 0 24 24">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                </span>
+                                <div>
+                                    <span class="contact-row-label">Location</span>
+                                    <span class="contact-row-value">Lahore, Pakistan</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-cta-group">
+                            <a href="mailto:gulshannasreen12@gmail.com" class="btn btn-primary">
+                                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                </svg>
+                                <span>Email Me</span>
+                            </a>
+                            <a href="https://wa.me/923047923657" class="btn btn-whatsapp" target="_blank"
+                                rel="noopener noreferrer" aria-label="Chat with Gulshan Nasreen on WhatsApp">
+                                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+                                    <path
+                                        d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" />
+                                </svg>
+                                <span>WhatsApp</span>
+                            </a>
+                        </div>
+                        <!-- ADD: social links (e.g., LinkedIn, Upwork, GitHub) here when ready -->
+                    </div>
+
+                    <!-- Formspree Contact Form -->
+                    <div class="contact-form-card reveal">
+                        <h3>Send a Message</h3>
+                        <p class="contact-intro">
+                            Share brief details about the role, project scope, or timeline.
+                        </p>
+
+                        <!-- UPDATE: Replace YOUR_FORMSPREE_ID with your actual Formspree endpoint ID -->
+                        <form id="contact-form" class="form-grid" action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+                            method="POST">
+                            <!-- Spam Honeypot -->
+                            <input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off"
+                                aria-hidden="true">
+
+                            <div class="form-group">
+                                <label for="contact-name" class="form-label">Your Name</label>
+                                <input type="text" id="contact-name" name="name" class="form-control"
+                                    placeholder="Enter your full name" autocomplete="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-email" class="form-label">Email Address</label>
+                                <input type="email" id="contact-email" name="email" class="form-control"
+                                    placeholder="you@company.com" autocomplete="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-topic" class="form-label">How Can I Help?</label>
+                                <select id="contact-topic" name="topic" class="form-control" required>
+                                    <option value="">Select an option</option>
+                                    <option value="Job / Remote Opportunity">Job / Remote Opportunity</option>
+                                    <option value="SEO &amp; WordPress Optimization">SEO &amp; WordPress Optimization
+                                    </option>
+                                    <option value="Administrative &amp; Office Support">Administrative &amp; Office
+                                        Support</option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message" class="form-label">Message</label>
+                                <textarea id="contact-message" name="message" class="form-control"
+                                    placeholder="Tell me a little about the role, website, or task you need help with..."
+                                    required></textarea>
+                            </div>
+
+                            <div>
+                                <button type="submit" id="submit-btn" class="btn btn-primary">
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                        <line x1="22" y1="2" x2="11" y2="13" />
+                                        <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                                    </svg>
+                                    <span>Send Message</span>
+                                </button>
+                            </div>
+
+                            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================================================
+       10. Footer
+       ======================================================================== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-top">
+                <div>
+                    <p class="footer-brand">Gulshan Nasreen</p>
+                    <p class="footer-tagline">Administration &amp; SEO Professional • Lahore, Pakistan</p>
+                </div>
+
+                <nav aria-label="Footer quick links">
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- ADD: social links (LinkedIn, etc.) -->
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2026</span> Gulshan Nasreen. All rights reserved.</p>
+                <a href="#home" class="footer-top-link">
+                    <span>Back to top</span>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="m18 15-6-6-6 6" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Back-to-Top Button -->
+    <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg class="icon icon--md" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m18 15-6-6-6 6" />
+        </svg>
+    </button>
+
+    <!-- ========================================================================
+       Vanilla JavaScript (Theme Toggle, Navigation, Scroll Reveal, Form)
+       ======================================================================== -->
+    <script>
+        (function () {
+            'use strict';
+
+            var root = document.documentElement;
+            var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            /* ----------------------------------------------------------------------
+               1. Auto-Updating Copyright Year
+               ---------------------------------------------------------------------- */
+            var yearEl = document.getElementById('current-year');
+            if (yearEl) {
+                yearEl.textContent = String(new Date().getFullYear());
+            }
+
+            /* ----------------------------------------------------------------------
+               2. Light / Dark Mode Toggle (respects system + safe localStorage)
+               ---------------------------------------------------------------------- */
+            var themeToggle = document.getElementById('theme-toggle');
+
+            function updateThemeUI(theme) {
+                var isDark = theme === 'dark';
+                root.setAttribute('data-theme', theme);
+                if (themeToggle) {
+                    themeToggle.setAttribute('aria-pressed', String(isDark));
+                    themeToggle.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+                }
+            }
+
+            updateThemeUI(root.getAttribute('data-theme') || 'light');
+
+            if (themeToggle) {
+                themeToggle.addEventListener('click', function () {
+                    var nextTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                    updateThemeUI(nextTheme);
+                    try {
+                        localStorage.setItem('gn-theme', nextTheme);
+                    } catch (e) { }
+                });
+            }
+
+            if (window.matchMedia) {
+                var colorSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+                var handleSystemThemeChange = function (event) {
+                    var saved = null;
+                    try {
+                        saved = localStorage.getItem('gn-theme');
+                    } catch (e) { }
+                    if (!saved) {
+                        updateThemeUI(event.matches ? 'dark' : 'light');
+                    }
+                };
+                if (typeof colorSchemeQuery.addEventListener === 'function') {
+                    colorSchemeQuery.addEventListener('change', handleSystemThemeChange);
+                }
+            }
+
+            /* ----------------------------------------------------------------------
+               3. Mobile Hamburger Menu
+               ---------------------------------------------------------------------- */
+            var menuToggle = document.getElementById('menu-toggle');
+            var mobileMenu = document.getElementById('mobile-menu');
+
+            function setMenuOpen(isOpen) {
+                if (!menuToggle || !mobileMenu) return;
+                mobileMenu.classList.toggle('is-open', isOpen);
+                menuToggle.setAttribute('aria-expanded', String(isOpen));
+                menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+            }
+
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', function () {
+                    setMenuOpen(!mobileMenu.classList.contains('is-open'));
+                });
+
+                mobileMenu.querySelectorAll('a').forEach(function (link) {
+                    link.addEventListener('click', function () {
+                        setMenuOpen(false);
+                    });
+                });
+
+                document.addEventListener('keydown', function (event) {
+                    if (event.key === 'Escape' && mobileMenu.classList.contains('is-open')) {
+                        setMenuOpen(false);
+                        menuToggle.focus();
+                    }
+                });
+
+                document.addEventListener('click', function (event) {
+                    if (
+                        mobileMenu.classList.contains('is-open') &&
+                        !mobileMenu.contains(event.target) &&
+                        !menuToggle.contains(event.target)
+                    ) {
+                        setMenuOpen(false);
+                    }
+                });
+            }
+
+            /* ----------------------------------------------------------------------
+               4. Active Section Highlight in Navigation
+               ---------------------------------------------------------------------- */
+            var sections = Array.prototype.slice.call(document.querySelectorAll('main section[id]'));
+            var navLinks = Array.prototype.slice.call(document.querySelectorAll('.site-header .nav-link'));
+
+            function setActiveLink(sectionId) {
+                navLinks.forEach(function (link) {
+                    var isMatch = link.getAttribute('href') === '#' + sectionId;
+                    link.classList.toggle('active', isMatch);
+                    if (isMatch) {
+                        link.setAttribute('aria-current', 'location');
+                    } else {
+                        link.removeAttribute('aria-current');
+                    }
+                });
+            }
+
+            if ('IntersectionObserver' in window && sections.length > 0) {
+                var navObserver = new IntersectionObserver(
+                    function (entries) {
+                        entries.forEach(function (entry) {
+                            if (entry.isIntersecting) {
+                                setActiveLink(entry.target.id);
+                            }
+                        });
+                    },
+                    { rootMargin: '-35% 0px -55% 0px', threshold: 0 }
+                );
+
+                sections.forEach(function (section) {
+                    navObserver.observe(section);
+                });
+            }
+
+            /* ----------------------------------------------------------------------
+               5. Scroll-Reveal Animations (Respects prefers-reduced-motion)
+               ---------------------------------------------------------------------- */
+            var revealElements = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+
+            if (prefersReducedMotion || !('IntersectionObserver' in window)) {
+                revealElements.forEach(function (el) {
+                    el.classList.add('is-visible');
+                });
+            } else {
+                var revealObserver = new IntersectionObserver(
+                    function (entries, observer) {
+                        entries.forEach(function (entry) {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('is-visible');
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    },
+                    { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+                );
+
+                revealElements.forEach(function (el) {
+                    revealObserver.observe(el);
+                });
+            }
+
+            /* ----------------------------------------------------------------------
+               6. Back-to-Top Floating Button
+               ---------------------------------------------------------------------- */
+            var backToTopBtn = document.getElementById('back-to-top');
+
+            if (backToTopBtn) {
+                var toggleBackToTop = function () {
+                    backToTopBtn.classList.toggle('is-visible', window.scrollY > 420);
+                };
+
+                window.addEventListener('scroll', toggleBackToTop, { passive: true });
+                toggleBackToTop();
+
+                backToTopBtn.addEventListener('click', function () {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: prefersReducedMotion ? 'auto' : 'smooth'
+                    });
+                });
+            }
+
+            /* ----------------------------------------------------------------------
+               7. Contact Form Submission (Formspree Progressive Enhancement)
+               ---------------------------------------------------------------------- */
+            var contactForm = document.getElementById('contact-form');
+            var formStatus = document.getElementById('form-status');
+            var submitBtn = document.getElementById('submit-btn');
+
+            if (contactForm && formStatus && submitBtn) {
+                contactForm.addEventListener('submit', function (event) {
+                    event.preventDefault();
+
+                    var actionUrl = contactForm.getAttribute('action') || '';
+                    var placeholderToken = 'YOUR_' + 'FORMSPREE_ID';
+                    formStatus.className = 'form-status';
+
+                    if (actionUrl.indexOf(placeholderToken) !== -1) {
+                        formStatus.classList.add('is-error');
+                        formStatus.textContent =
+                            'This form is not connected yet. Please reach out directly by email at gulshannasreen12@gmail.com or on WhatsApp.';
+                        return;
+                    }
+
+                    submitBtn.disabled = true;
+                    submitBtn.setAttribute('aria-busy', 'true');
+                    formStatus.textContent = 'Sending your message...';
+
+                    fetch(actionUrl, {
+                        method: 'POST',
+                        body: new FormData(contactForm),
+                        headers: { Accept: 'application/json' }
+                    })
+                        .then(function (response) {
+                            if (response.ok) {
+                                contactForm.reset();
+                                formStatus.classList.add('is-success');
+                                formStatus.textContent = 'Thank you! Your message has been sent. I will get back to you soon.';
+                            } else {
+                                return response.json().then(function (data) {
+                                    throw new Error(
+                                        data && data.errors
+                                            ? data.errors.map(function (err) { return err.message; }).join(', ')
+                                            : 'Unable to send right now.'
+                                    );
+                                });
+                            }
+                        })
+                        .catch(function () {
+                            formStatus.classList.add('is-error');
+                            formStatus.textContent =
+                                'Something went wrong while sending your message. Please email gulshannasreen12@gmail.com or message me on WhatsApp.';
+                        })
+                        .finally(function () {
+                            submitBtn.disabled = false;
+                            submitBtn.removeAttribute('aria-busy');
+                        });
+                });
+            }
+        })();
+    </script>
+</body>
+
+</html>
