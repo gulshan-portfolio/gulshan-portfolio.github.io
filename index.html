@@ -1899,8 +1899,10 @@
             min-width: 0;
         }
 
-        .hero-grid {
-            grid-template-columns: minmax(0, 1fr);
+        @media (max-width: 899px) {
+            .hero-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
         }
 
         .hero-title,
